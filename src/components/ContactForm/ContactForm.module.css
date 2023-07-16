@@ -1,0 +1,48 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.form:active{
+  border-color: red;
+}
+
+.formName,
+.formNumber {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem auto;
+  align-items: flex-start;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+
+.formLabel {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.formBtn {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  background-color: hsl(243, 94%, 50%);
+  border: none;
+  border-radius: 6px;
+  color: #010100;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  height: 36px;
+  line-height: 20px;
+  padding: 0 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formBtn:hover {
+  background-color: hwb(122 4% 11%);
+}

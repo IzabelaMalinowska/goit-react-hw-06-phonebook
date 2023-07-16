@@ -1,0 +1,34 @@
+.filterName {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem auto 1rem;
+  align-items: flex-start;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  
+}
+
+.filterName::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff6699;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.filterName:hover::after {
+  transform: scaleX(1);
+}
+
+.filterLabel {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
